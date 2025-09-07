@@ -5,16 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <script type="module" crossorigin src="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-DvPDDfy5.css">
+    <script type="module" crossorigin src="/goit-js-hw-09/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-BY2Lfp-k.css">
   </head>
   <body>
     <main>
       <div class="container">
+        <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">
-          <a class="back-link" href="./index.html">Go back</a>
-          <span class="main-title-gradient">Form</span>
+          Form
+          <!-- <span class="main-title-gradient">Form</span> -->
         </h1>
+        <form class="feedback-form" autocomplete="off">
+          <label class="label-form">
+            Email
+            <input class="input-form" type="email" name="email" autofocus />
+          </label>
+          <label class="label-form">
+            Message
+            <textarea name="message" rows="5"></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </main>
   </body>
